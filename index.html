@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starwars API Character Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="button">
+        <h3>Generate Character</h3>
+    </button>
+    <h1 class="name"></h1>
+    <img src="" class="character-img" alt="">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").on("click", function(){
+                const randomNumber = Math.ceil(Math.random() * 88)
+                $.get(`https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/id/${randomNumber}.json`, function(data){
+                    console.log(data);
+                    $("h1").text(data['name'])
+                    $(".character-img").attr("src", data['image'])
+                })
+            })
+        })
+    </script>
+</body> 
+</html>

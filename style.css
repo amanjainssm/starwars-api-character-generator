@@ -15,9 +15,12 @@ img{
 }   
 button{
     width: 200px;
-    height: 50px;
+    height: 55px;
     display: block;
     margin: auto;
     border: 1px solid crimson;
     box-shadow: 3px 3px 2px crimson;
+}
+.container{
+    text-align: center;
 }

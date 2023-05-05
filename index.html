@@ -11,13 +11,16 @@
   </head>
   
   <body>
+    <div>
+      <h1 class="text-center fw-bold mt-4 mb-2">Starwars API Character Generator</h2>
+    </div>
     <!-- Character Generator Button -->
-    <button class="button mt-5 mb-3">
+    <button class="button mt-4 mb-2">
       <p class="fw-bold">Generate Character</p>
     </button>
     
     <!-- Character Name and Image -->
-    <h1 class="name"></h1>
+    <h2 class=" text-center mt-4 name"></h2>
     <img src="" class="character-img" alt="">
 
     <!-- Footer -->
@@ -47,7 +50,7 @@
           const randomNumber = Math.ceil(Math.random() * 88)
           $.get(`https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/id/${randomNumber}.json`, function(data) {
             console.log(data);
-            $("h1").text(data['name'])
+            $("h2").text(data['name'])
             $(".character-img").attr("src", data['image'])
           })
         })

@@ -8,8 +8,8 @@ h1 {
   text-align: center;
 }
 img {
-  height: 400px;
-  width: 320px;
+  height: 380px;
+  width: 300px;
   margin: 20px auto;
   display: block;
   border: 1px solid black;
@@ -27,7 +27,7 @@ img {
 }
 
 .list-inline {
-  display: inline-flex;
+  /* display: inline-flex; */
   font-size: 16px;
   align-items: center;
   justify-content: center;

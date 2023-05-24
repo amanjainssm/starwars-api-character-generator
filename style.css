@@ -4,11 +4,13 @@ body {
   font-family: "Noto Serif", serif;
   font-family: "Yantramanav", sans-serif;
 }
+
 h1 {
   text-align: center;
 }
+
 img {
-  height: 380px;
+  height: 375px;
   width: 300px;
   margin: 20px auto;
   display: block;
@@ -16,6 +18,7 @@ img {
   border-radius: 5%;
   box-shadow: 5px 5px 2px lightcoral;
 }
+
 .button {
   padding: 15px 10px;
   width: 200px;
@@ -24,27 +27,4 @@ img {
   margin: auto;
   border: 1px solid black;
   box-shadow: 3px 3px 2px lightcoral;
-}
-
-.list-inline {
-  /* display: inline-flex; */
-  font-size: 16px;
-  align-items: center;
-  justify-content: center;
-}
-
-.link-custom {
-  font-weight: 400;
-  position: relative;
-  text-decoration: none;
-  color: black;
-}
-.link-custom:hover {
-  color: crimson;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
